@@ -1,0 +1,174 @@
+*{margin: 0;padding: 0;}
+@font-face {
+	font-family:Hand_Of_Sean_Demo;
+	src: url(Hand_Of_Sean_Demo.ttf);
+}
+body,html{background: url(../images/yellow.png);padding: 0; margin: 0; height: 100%; font-family: "微软雅黑";}
+.section hr{height: 4px; width: 0px;text-align: center;position: relative;background: #E87E04;margin: 20px auto 40px;border: 0;}
+.active hr{height: 4px;width: 150px;transition: all 1s 1s;}
+.container{position: relative;}
+
+.music_control{display: block; position: fixed; right: 70px; top: 30px;width: 80px; height: 80px; opacity: 0.8; border-radius: 50%; background: #CBCBCB; z-index: 999;}
+.music_control_pause{display: block; cursor: pointer; width: 60px; height: 60px; opacity: 1; margin: 10px; border-radius: 50%;}
+.music_control_pause img{width: 60px; height: 60px;}
+.music_control_play{display: none; cursor: pointer; width: 60px; height: 60px; opacity: 1; margin: 10px; border-radius: 50%;}
+.music_control_play img{width: 60px; height: 60px;}
+
+.menu_nav{display: none;text-align: center; width: 790px; bottom: -80px; left: 0; right: 0; margin-left: auto; margin-right: auto;  height: 50px; position: fixed; z-index: 999;}
+.menu_nav a{line-height: 50px; text-decoration: none; background: #fff; float: left; width: 120px; height: 50px; margin-left: 10px; border-radius:5% ; list-style: none;}
+.menu_nav ul li span{font-family: "Hand_Of_Sean_Demo"; font-size:16px; width: 100%; height: 100%; text-decoration: none;color: #000000;}
+.menu_nav a:hover{background: #00457D;opacity: 0.8;}
+.menu_nav a:hover span{color: #fff;}
+.menu_nav_bg{background: #000000; z-index: 998; opacity: 0.5;position: fixed; bottom: 0px; width: 100%; height: 60px;}
+
+#first_page{background: url(../../images/bgimg/1.jpg); background-repeat: no-repeat; background-size: 100% 100%;}
+#two_page{background: url(../../images/bgimg/2.jpg); background-repeat: no-repeat; background-size: 100% 100%;}
+#three_page{background: url(../../images/bgimg/3.jpg); background-repeat: no-repeat; background-size: 100% 100%;}
+#four_page{background: url(../../images/bgimg/4.jpg); background-repeat: no-repeat; background-size: 100% 100%;}
+#five_page{background: url(../../images/bgimg/5.jpg); background-repeat: no-repeat; background-size: 100% 100%;}
+
+.menu_info{text-align: center;transition: all 1s 1s;}
+
+.fade{transform: translateY(2em); -webkit-transform: translateY(2em);opacity: 0;}
+
+#first_page h1{margin: 0;font-family: "Hand_Of_Sean_Demo"; font-size: 70px;font-weight: 400; margin: 30px 0 30px;}
+#first_page h3{font-family: "Hand_Of_Sean_Demo"; font-size: 50px; margin: 50px 0;}
+.section.active .fadesin1{transform: translateY(0);-webkit-transform: translateY(0); opacity: 1;transition: all 1s 0s;}
+.section.active .fadesin2{transform: translateY(0);-webkit-transform: translateY(0); opacity: 1;transition: all 1s 0.5s;}
+.section.active .fadesin3{transform: translateY(0);-webkit-transform: translateY(0); opacity: 1;transition: all 1s 1s;}
+
+.menu_info span{background: #fff; font-family: "Hand_Of_Sean_Demo"; font-size: 18px; cursor: pointer; border: #00457D solid 1px; border-radius: 5px;width: 150px; height: 50px; display: inline-block; padding: 10px; margin: 20px;}
+.menu_info a{list-style: none; text-decoration: none; color: #222222; width: 150px; height: 50px; color: #000000;}
+.menu_info span:hover{background: #00457D; opacity: 0.8; color: #fff;}
+
+#top{position: fixed; width: 50px; height: 50px; background: #cccccc; opacity: 0.6; right: 20px; bottom: 50px; border-radius: 30%; padding: 12px;}
+#top:hover{cursor: pointer; opacity: 1;}
+
+.personal_info{text-align: center;}
+.personal_info h2{font-family: "Hand_Of_Sean_Demo"; color: #000000; font-size: 40px;font-weight: 200; margin: 20px 0;}
+.personal_info p{font-family: "Hand_Of_Sean_Demo"; color: #000000; font-size: 18px;font-weight: 100; margin: 5px 0;}
+.personal_info .head_img img{border-radius: 50%;left: 0px; width: 10%; height: 10%; padding: 15px;transition: all 0.3s linear;}
+.personal_info .head_img img:hover{transition: all 0.3s linear;  padding: 0;opacity: 0.8;}
+.personal_info .weichat_img img{border-radius: 15%; width: 17%; height: 17%;}
+
+.personal_annal{text-align: center;}
+.personal_annal h2{font-family: "Hand_Of_Sean_Demo"; color: #00000; font-size: 40px;font-weight: 200; margin: 20px 0;}
+.personal_annal ul{width: 550px; margin: 0 auto;}
+.personal_annal ul li{list-style: none; margin: 40px 0 0 0; height: 150px;}
+.personal_annal ul li .date_box{opacity: 1; margin: 0 auto; border-radius: 50%; background: #ffffff; width: 140px; height: 140px; padding: 20px; font-family: "Hand_Of_Sean_Demo"; font-size: 18px;font-weight: 100;}
+.personal_annal ul li .connect-box{font-size: 16px; float: left; display: inline-block; text-align: right; margin-top: 10px; padding: 30px;color: #00000;}
+
+.my_obj{text-align: center; position: relative;}
+.my_obj h2{font-family: "Hand_Of_Sean_Demo"; font-size: 40px;font-weight: 200; margin: 20px 0;}
+.my_obj .obj_img img{width: 100%;}
+.my_obj .container .href_box{position: absolute; top: 50%; display: none;width: 100%;margin-top: -46px;left: 0;text-align: center;}
+.my_obj .container .href_box p{color: #fff; font-size: 12px; font-family: "微软雅黑";}
+.my_obj .container .href_box h4{color: #fff; font-size: 16px; font-weight: bold; font-family: "微软雅黑";}
+.my_obj .container .href_box img{width: 25px; height: 25px;}
+.my_obj .container>div{padding: 20px;}
+.my_obj .container>div:hover {padding: 0;transition: color 0.3s linear;}
+.my_obj .container>div:hover .href_box {display: block; padding: 0 2em;}
+.my_obj .container>div:hover .obj_img{-webkit-filter: brightness(0.3);filter: brightness(0.3);}
+
+.contact_me{margin: 0 auto; text-align: center;}
+.contact_me h2{font-family: "Hand_Of_Sean_Demo"; font-size: 40px;font-weight: 200; margin: 20px 0;}
+.contact_me .control-label{font-size: 16px; font-weight: bold;}
+#mpanel1{float: left;}
+#check-btn{width: 100px; height: 40px; float: right;}
+
+/*以下是浏览器宽度设置*/
+
+@media screen and (max-width: 768px){
+	
+#first_page{background: url(../../images/bgimg/1.jpg) no-repeat center; background-size: cover;}
+#two_page{background: url(../../images/bgimg/2.jpg) no-repeat center; background-size: cover;}
+#three_page{background: url(../../images/bgimg/3.jpg) no-repeat center; background-size: cover;}
+#four_page{background: url(../../images/bgimg/4.jpg) no-repeat center;  background-size: cover;}
+#five_page{background: url(../../images/bgimg/5.jpg) no-repeat center; background-size: cover;}	
+	
+#first_page h1{font-family: "Hand_Of_Sean_Demo"; font-size: 45px;font-weight: 300; margin: 20px 0;}
+#first_page h3{font-family: "Hand_Of_Sean_Demo"; font-size: 28px; margin: 20px 0;}
+#first_page span{width: 145px;margin: 5px 60px 0px 60px;}
+
+.music_control{ right: 15px; top: 20px;width: 60px; height: 60px;}
+.music_control_pause{width: 40px; height: 40px; margin: 10px;}
+.music_control_pause img{width: 40px; height: 40px;}
+.music_control_play{width: 40px; height: 40px;}
+.music_control_play img{width: 40px; height: 40px;}
+
+.menu_nav{width: 362px;height: 30px;}
+.menu_nav a{line-height: 30px; width: 58px; overflow: hidden; height: 30px; margin-left: 2px;font-size:8px;}
+.menu_nav_bg{height: 40px;}
+
+.personal_info h2{font-family: "Hand_Of_Sean_Demo"; font-size: 28px;font-weight: 100; margin: 20px 0;}
+.personal_info p{font-family: "Hand_Of_Sean_Demo"; font-size: 18px;font-weight: 100; margin: 5px 0;}
+.personal_info .head_img img{border-radius: 50%; width: 30%; height: 30%;}
+.personal_info .weichat_img img{border-radius: 15%; width: 35%; height: 35%;}
+
+.personal_annal ul{width: 300px; margin: 0 auto;}
+.personal_annal ul li{list-style: none; margin: 10px 0px 0px 0px; height: 100px;}
+.personal_annal ul li .date_box{vertical-align: middle; padding: 10px 5px 5px 5px; opacity: 1; margin: 0 auto; background: #ffffff; width: 80px; height: 80px; font-family: "Hand_Of_Sean_Demo"; font-size: 10px; font-weight: 100;}
+.personal_annal ul li .connect-box{float: left; display: inline-block; text-align: right; padding: 10px;}
+.personal_annal .connect-box p{font-size: 10px;}
+
+.contact_me .control-label{color: #fff;}
+
+}
+@media screen and (min-width: 768px) and (max-width: 992px){
+#first_page h1{font-family: "Hand_Of_Sean_Demo"; font-size: 60px;font-weight: 400; margin: 20px 0;}
+#first_page h3{font-family: "Hand_Of_Sean_Demo"; font-size: 30px; margin: 30px 0;}
+#first_page span{width: 280px; margin: 5px;}
+
+.music_control{ right: 15px; top: 20px;width: 60px; height: 60px;}
+.music_control_pause{width: 40px; height: 40px; margin: 10px;}
+.music_control_pause img{width: 40px; height: 40px;}
+.music_control_play{width: 40px; height: 40px;}
+.music_control_play img{width: 40px; height: 40px;}
+
+.menu_nav{width: 430px;height: 50px;}
+.menu_nav a{line-height: 50px; width: 80px; overflow: hidden; height: 50px; margin-left: 5px;font-size:8px;}
+.menu_nav_bg{height: 60px;}
+
+.personal_info h2{font-family: "Hand_Of_Sean_Demo"; font-size: 28px;font-weight: 100; margin: 20px 0;}
+.personal_info p{font-family: "Hand_Of_Sean_Demo"; font-size: 18px;font-weight: 100; margin: 5px 0;}
+.personal_info .head_img img{border-radius: 50%; width: 20%; height: 20%;}
+.personal_info .weichat_img img{border-radius: 15%; width: 30%; height: 30%;}
+
+.personal_annal ul{width: 300px; margin: 0 auto;}
+.personal_annal ul li{list-style: none; margin: 20px 0px 0px 0px; height: 100px;}
+.personal_annal ul li .date_box{opacity: 1; margin: 0 auto; border-radius: 50%; background: #ffffff; width: 90px; height: 90px; padding: 10px; font-family: "Hand_Of_Sean_Demo"; font-size: 8px;font-weight: 100;}
+.personal_annal ul li .connect-box{float: left; display: inline-block; text-align: right; padding: 10px;}
+.personal_annal .connect-box p{font-size: 10px;}
+
+
+
+}
+@media screen and (min-width: 992px) and (max-width: 1200px){
+#first_page h1{font-family: "Hand_Of_Sean_Demo"; font-size: 70px;font-weight: 400; margin: 20px 0;}
+#first_page h3{font-family: "Hand_Of_Sean_Demo"; font-size: 40px; margin: 30px 0;}
+
+.personal_info h2{font-family: "Hand_Of_Sean_Demo"; font-size: 40px;font-weight: 200; margin: 20px 0;}
+.personal_info p{font-family: "Hand_Of_Sean_Demo"; font-size: 18px;font-weight: 100; margin: 5px 0;}
+.personal_info .head_img img{border-radius: 50%; width: 15%; height: 15%;}
+.personal_info .weichat_img img{border-radius: 15%; width: 25%; height: 25%;}
+
+.personal_annal ul{width: 300px; margin: 0 auto;}
+.personal_annal ul li{list-style: none; margin: 20px 0px 0px 0px; height: 100px;}
+.personal_annal ul li .date_box{opacity: 1; margin: 0 auto; border-radius: 50%; background: #ffffff; width: 90px; height: 90px; padding: 10px; font-family: "Hand_Of_Sean_Demo"; font-size: 8px;font-weight: 100;}
+.personal_annal ul li .connect-box{float: left; display: inline-block; text-align: right; padding: 10px;}
+.personal_annal .connect-box p{font-size: 10px;}
+
+}
+@media screen and (min-width: 1200px) and (max-width:1366px) {
+
+	
+}
+@media screen and (min-width: 1366px) and (max-width:1440px) {
+	
+}
+@media screen and (min-width: 1440px) and (max-width:1600px) {
+	
+}
+@media screen and (min-width: 1600px) and (max-width:1920px) {
+	
+}
