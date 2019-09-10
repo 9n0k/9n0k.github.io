@@ -108,7 +108,7 @@ body,html{background: url(../images/yellow.png);padding: 0; margin: 0; height: 1
 .personal_annal h2{font-size: 20px; margin: 10px 0;}
 .personal_annal ul{width: 300px; margin: 0 auto;}
 .personal_annal ul li{list-style: none; margin: 10px 0px 0px 0px; height: 100px;}
-.personal_annal ul li .date_box{text-align: center; vertical-align: middle; padding: 10px 5px 5px 5px; opacity: 1; margin: 0 auto; background: #ffffff; width: 80px; height: 80px; font-family: "Hand_Of_Sean_Demo"; font-size: 10px; font-weight: 100;}
+.personal_annal ul li .date_box{text-align: center; vertical-align: middle; padding: 15px; opacity: 1; margin: 0 auto; background: #ffffff; width: 80px; height: 80px; font-family: "Hand_Of_Sean_Demo"; font-size: 10px; font-weight: 100;}
 .personal_annal ul li .connect-box{float: left; display: inline-block; text-align: right; padding: 10px;}
 .personal_annal .connect-box p{font-size: 10px;}
 
