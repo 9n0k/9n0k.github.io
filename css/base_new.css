@@ -55,7 +55,7 @@ body,html{background: url(../images/yellow.png);padding: 0; margin: 0; height: 1
 .personal_annal h2{font-family: "Hand_Of_Sean_Demo"; color: #00000; font-size: 40px;font-weight: 200; margin: 20px 0;}
 .personal_annal ul{width: 550px; margin: 0 auto;}
 .personal_annal ul li{list-style: none; margin: 40px 0 0 0; height: 150px;}
-.personal_annal ul li .date_box{text-align: center;  opacity: 1; margin: 0 auto; border-radius: 50%; background: #ffffff; width: 140px; height: 140px; padding: 40px; font-family: "Hand_Of_Sean_Demo"; font-size: 18px;font-weight: 100;}
+.personal_annal ul li .date_box{text-align: center;  opacity: 1; margin: 0 auto; border-radius: 50%; background: #ffffff; width: 140px; height: 140px; padding: 20px; font-family: "Hand_Of_Sean_Demo"; font-size: 18px;font-weight: 100;}
 .personal_annal ul li .connect-box{font-size: 16px; float: left; display: inline-block; text-align: right; margin-top: 10px; padding: 30px;color: #00000;}
 
 .my_obj{text-align: center; position: relative;}
